@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spanish Number Translator</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <h1>Spanish Number Translator</h1>
+  </div>
+
+  <div class="container">
+
+    <div class="inputs">
+      <input type="text" id="number" size="15" maxlength="15" value="1"
+        onKeyPress="if (event.keyCode == 13) translateNum()" name="text">
+
+      <input type="button" value="Translate" onClick="translateNum()">
+    </div>
+
+    <div class="output">
+      <h3>cardinal number:</h3>
+      <p id="spanNum">uno</p>
+
+      <h3>masculine adjective number:</h3>
+      <p id="mascNum">un + masculine noun</p>
+
+      <h3>feminine adjective number:</h3>
+      <p id="femiNum">una + feminine noun</p>
+    </div>
+
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
